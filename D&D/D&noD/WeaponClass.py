@@ -1,5 +1,7 @@
 
 class Weapon(object):
+    """créer une arme avec un nom et des points d'attaque"""
+    
     def __init__(self, name='Default', attack_damage=0.0):
         assert isinstance(name, str)
         self.name = name
