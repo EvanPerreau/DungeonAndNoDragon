@@ -3,6 +3,8 @@ from LootClass import *
 
 
 class Monster(object):
+    """créer un monstre avec un nom, des points de vie et d'attaques ainsi que un loot"""
+    
     def __init__(self, name='Default', health=50.0, attack_damage=5.0, loot=Loot):
         assert isinstance(name, str)
         self.name = name
