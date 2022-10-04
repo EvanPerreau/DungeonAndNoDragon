@@ -3,6 +3,8 @@ from LootClass import *
 
 
 class Chest(object):
+    """créer un coffre avec un nom, un loot, et si il est piégé"""
+    
     def __init__(self, name='Default', loot=Loot, trap=False):
         assert isinstance(name, str)
         self.name = name
