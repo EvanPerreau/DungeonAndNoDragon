@@ -1,5 +1,7 @@
 
 class Potion(object):
+    """définit une potion avec un nom, une augmentation de points de vie et une augmentation de points de dégats"""
+    
     def __int__(self, name='Default', heal=False, damage=False):
         assert isinstance(name, str)
         self.name = name
