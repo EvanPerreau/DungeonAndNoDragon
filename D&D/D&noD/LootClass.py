@@ -5,6 +5,8 @@ from PotionClass import *
 
 
 class Loot(object):
+    """créer un loot avec une arme, une arumre et une potion"""
+    
     def __int__(self, name='Default', weapon=Weapon, armor=Armor, potion=Potion):
         assert isinstance(name, str)
         self.name = name
